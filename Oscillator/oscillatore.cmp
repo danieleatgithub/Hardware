@@ -1,0 +1,38 @@
+Cmp-Mod V01 Genere par PcbNew le dom 22 mar 2015 09:08:53 CET
+
+BeginCmp
+TimeStamp = /550E562E;
+Reference = P1;
+ValeurCmp = CONN_2;
+IdModule  = 2PIN_6mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /550E539E;
+Reference = R1;
+ValeurCmp = 680;
+IdModule  = R3;
+EndCmp
+
+BeginCmp
+TimeStamp = /550E53AF;
+Reference = R2;
+ValeurCmp = 680;
+IdModule  = R3;
+EndCmp
+
+BeginCmp
+TimeStamp = /550E5299;
+Reference = U1;
+ValeurCmp = 74HC04;
+IdModule  = DIP-16__300;
+EndCmp
+
+BeginCmp
+TimeStamp = /550E52B3;
+Reference = X1;
+ValeurCmp = 400__KHz;
+IdModule  = R4;
+EndCmp
+
+EndListe

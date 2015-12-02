@@ -1,0 +1,47 @@
+# EESchema Netlist Version 1.1 created  dom 22 mar 2015 08:28:22 CET
+(
+ ( /550E562E 2PIN_6mm P1 CONN_2
+  ( 1 VCC )
+  ( 2 GND )
+ )
+ ( /550E539E SM1206 R1 680
+  ( 1 N-000006 )
+  ( 2 N-000005 )
+ )
+ ( /550E53AF SM1206 R2 680
+  ( 1 N-000003 )
+  ( 2 N-000006 )
+ )
+ ( /550E5299 DIP-16__300 U1 74HC04
+  ( 1 N-000005 )
+  ( 2 N-000006 )
+  ( 3 N-000006 )
+  ( 4 N-000003 )
+  ( 5 N-000003 )
+  ( 6 ? )
+  ( 7 GND )
+  ( 14 VCC )
+ )
+ ( /550E52B3 R4 X1 400__KHz
+  ( 1 N-000005 )
+  ( 2 N-000003 )
+ )
+)
+*
+{ Allowed footprints by component:
+$component R1
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R2
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$endfootprintlist
+}
