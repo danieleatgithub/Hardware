@@ -1,0 +1,239 @@
+EESchema Schematic File Version 2  date dom 19 apr 2015 17:44:45 CEST
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 43  0
+EELAYER END
+$Descr A4 11700 8267
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "19 apr 2015"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Connection ~ 8950 5400
+Wire Wire Line
+	8950 5800 8950 3350
+Wire Wire Line
+	6850 3850 8250 3850
+Wire Wire Line
+	8250 3850 8250 5000
+Wire Wire Line
+	8250 5000 9100 5000
+Wire Wire Line
+	6850 3750 9100 3750
+Wire Wire Line
+	1850 3850 3250 3850
+Wire Wire Line
+	3250 3850 3250 3550
+Wire Wire Line
+	3250 3550 5250 3550
+Wire Wire Line
+	1900 5000 3450 5000
+Wire Wire Line
+	3450 5000 3450 3850
+Wire Wire Line
+	3450 3850 5250 3850
+Wire Wire Line
+	1850 1950 1850 1650
+Wire Wire Line
+	7300 2450 6850 2450
+Wire Wire Line
+	7100 2950 7300 2950
+Wire Wire Line
+	6850 3050 7100 3050
+Wire Wire Line
+	5250 3350 4950 3350
+Wire Wire Line
+	5250 2850 4950 2850
+Wire Wire Line
+	6850 2450 6850 1450
+Wire Wire Line
+	6850 1450 1850 1450
+Wire Wire Line
+	5250 2450 4950 2450
+Wire Wire Line
+	5250 2950 4950 2950
+Wire Wire Line
+	7300 3350 6850 3350
+Wire Wire Line
+	6850 2850 7300 2850
+Wire Wire Line
+	1850 1650 7100 1650
+Wire Wire Line
+	7100 1650 7100 3050
+Connection ~ 7100 2950
+Wire Wire Line
+	5250 3750 1850 3750
+Wire Wire Line
+	5250 3650 3550 3650
+Wire Wire Line
+	3550 3650 3550 5100
+Wire Wire Line
+	3550 5100 1900 5100
+Wire Wire Line
+	9100 3950 8450 3950
+Wire Wire Line
+	8450 3950 8450 3550
+Wire Wire Line
+	8450 3550 6850 3550
+Wire Wire Line
+	9100 5200 8350 5200
+Wire Wire Line
+	8350 5200 8350 3650
+Wire Wire Line
+	8350 3650 6850 3650
+Wire Wire Line
+	8950 3350 9100 3350
+Wire Wire Line
+	8950 5400 9100 5400
+$Comp
+L GND #PWR3
+U 1 1 5533CD09
+P 8950 5800
+F 0 "#PWR3" H 8950 5800 30  0001 C CNN
+F 1 "GND" H 8950 5730 30  0001 C CNN
+	1    8950 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR2
+U 1 1 5533CBC1
+P 1850 1950
+F 0 "#PWR2" H 1850 1950 30  0001 C CNN
+F 1 "GND" H 1850 1880 30  0001 C CNN
+	1    1850 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR1
+U 1 1 5533CA75
+P 1850 1450
+F 0 "#PWR1" H 1850 1540 20  0001 C CNN
+F 1 "+5V" H 1850 1540 30  0000 C CNN
+	1    1850 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C3
+U 1 1 5533CA67
+P 7300 2650
+F 0 "C3" H 7350 2750 50  0000 L CNN
+F 1 "CP1" H 7350 2550 50  0000 L CNN
+	1    7300 2650
+	1    0    0    1   
+$EndComp
+$Comp
+L CP1 C4
+U 1 1 5533CA65
+P 7300 3150
+F 0 "C4" H 7350 3250 50  0000 L CNN
+F 1 "CP1" H 7350 3050 50  0000 L CNN
+	1    7300 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C2
+U 1 1 5533CA62
+P 4950 3150
+F 0 "C2" H 5000 3250 50  0000 L CNN
+F 1 "CP1" H 5000 3050 50  0000 L CNN
+	1    4950 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C1
+U 1 1 5533CA5D
+P 4950 2650
+F 0 "C1" H 5000 2750 50  0000 L CNN
+F 1 "CP1" H 5000 2550 50  0000 L CNN
+	1    4950 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_3 K2
+U 1 1 5533CA40
+P 1550 5000
+F 0 "K2" V 1500 5000 50  0000 C CNN
+F 1 "CONN_3" V 1600 5000 40  0000 C CNN
+	1    1550 5000
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_3 K1
+U 1 1 5533CA3C
+P 1500 3750
+F 0 "K1" V 1450 3750 50  0000 C CNN
+F 1 "CONN_3" V 1550 3750 40  0000 C CNN
+	1    1500 3750
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_2 P1
+U 1 1 5533CA2B
+P 1500 1550
+F 0 "P1" V 1450 1550 40  0000 C CNN
+F 1 "CONN_2" V 1550 1550 40  0000 C CNN
+	1    1500 1550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L DB9 J2
+U 1 1 5533CA16
+P 9550 5000
+F 0 "J2" H 9550 5550 70  0000 C CNN
+F 1 "DB9" H 9550 4450 70  0000 C CNN
+	1    9550 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L DB9 J1
+U 1 1 5533CA06
+P 9550 3750
+F 0 "J1" H 9550 4300 70  0000 C CNN
+F 1 "DB9" H 9550 3200 70  0000 C CNN
+	1    9550 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L MAX232 U1
+U 1 1 5533C9DD
+P 6050 3150
+F 0 "U1" H 6050 4000 70  0000 C CNN
+F 1 "MAX232" H 6050 2300 70  0000 C CNN
+	1    6050 3150
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
