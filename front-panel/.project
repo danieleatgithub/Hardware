@@ -3,6 +3,7 @@
 	<name>front-panel</name>
 	<comment></comment>
 	<projects>
+		<project>Kicad</project>
 	</projects>
 	<buildSpec>
 	</buildSpec>
