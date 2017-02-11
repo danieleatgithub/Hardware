@@ -1,4 +1,4 @@
-update=sab 12 dic 2015 09:02:42 CET
+update=sab 11 feb 2017 11:56:56 CET
 last_client=eeschema
 [eeschema]
 version=1
@@ -40,3 +40,4 @@ LibName28=atmel
 LibName29=contrib
 LibName30=valves
 LibName31=/wks/workspace/Hardware/Kicad/MyKicadLib
+LibName32=/wks/workspace/Hardware/Kicad/varistor

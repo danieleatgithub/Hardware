@@ -1,0 +1,24 @@
+EESchema-DOCLIB  Version 2.0  Date: sab 11 feb 2017 10:22:58 CET
+#
+$CMP EZJ-Z0V80010
+D EZJ-Z0V80010, Panasonic - ECG, VARISTOR MULTILAYER 80V 0402 Maximum DC Volts=10VDC Maximum Capacitance @ 1MHz = 1 pF, 0402
+K VARISTOR
+F http://industrial.panasonic.com/www-data/pdf/AWC0000/AWC0000CE2.pdf
+$ENDCMP
+#
+$CMP VARISTOR
+K VARISTOR
+$ENDCMP
+#
+$CMP VZ-14D391KBS
+D EZJ-Z0V80010, Panasonic - ECG, VARISTOR MULTILAYER 80V 0402 Maximum DC Volts=10VDC Maximum Capacitance @ 1MHz = 1 pF, 0402
+K VARISTOR
+F http://industrial.panasonic.com/www-data/pdf/AWC0000/AWC0000CE2.pdf
+$ENDCMP
+#
+$CMP VZ-14D431KBS
+D VZ-14D431KBS, VARISTOR MULTILAYER Max AC 275V DC 370 Typical Capacitance @ 1KHz = 600 pF
+K VARISTOR
+$ENDCMP
+#
+#End Doc Library
