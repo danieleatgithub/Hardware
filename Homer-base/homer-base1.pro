@@ -1,6 +1,6 @@
-update=sab 12 dic 2015 13:35:23 CET
+update=dom 12 feb 2017 18:01:30 CET
 version=1
-last_client=eeschema
+last_client=kicad
 [cvpcb]
 version=1
 NetIExt=net
@@ -36,8 +36,6 @@ LibName8=led
 LibName9=dip_sockets
 LibName10=pga_sockets
 LibName11=valves
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=../../HW
@@ -78,3 +76,6 @@ LibName28=atmel
 LibName29=contrib
 LibName30=valves
 LibName31=/wks/workspace/Hardware/Kicad/MyKicadLib
+LibName32=/wks/workspace/Hardware/Kicad/molex
+[general]
+version=1

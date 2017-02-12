@@ -30,6 +30,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:MyKicadLib
+LIBS:molex
 LIBS:homer-base1-cache
 EELAYER 27 0
 EELAYER END
@@ -37,7 +38,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "1 jan 2016"
+Date "12 feb 2017"
 Rev ""
 Comp ""
 Comment1 ""
@@ -108,8 +109,6 @@ Wire Wire Line
 	6950 1450 6950 1600
 Connection ~ 6950 1450
 Wire Wire Line
-	3750 700  6650 700 
-Wire Wire Line
 	6650 700  6650 950 
 Wire Wire Line
 	2800 6200 2800 6300
@@ -117,8 +116,6 @@ Wire Wire Line
 	5500 5850 6600 5850
 Wire Wire Line
 	5200 5550 6600 5550
-Wire Wire Line
-	6300 5550 6300 5250
 Wire Wire Line
 	4900 2250 4650 2250
 Wire Wire Line
@@ -237,17 +234,6 @@ F 1 "CONN_8X2" V 9500 2350 50  0000 C CNN
 F 2 "" H 9500 2350 60  0001 C CNN
 F 3 "" H 9500 2350 60  0001 C CNN
 	1    9500 2350
-	1    0    0    -1  
-$EndComp
-$Comp
-L +3,3V #PWR?
-U 1 1 55470334
-P 6300 5250
-F 0 "#PWR?" H 6300 5210 30  0001 C CNN
-F 1 "+3,3V" H 6300 5360 30  0000 C CNN
-F 2 "" H 6300 5250 60  0001 C CNN
-F 3 "" H 6300 5250 60  0001 C CNN
-	1    6300 5250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -407,7 +393,7 @@ F 3 "" H 5700 1650 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1200 1100 1200 2950
+	1200 700  1200 2950
 $Comp
 L +3.3V #PWR?
 U 1 1 566BCF7A
@@ -420,13 +406,9 @@ F 3 "" H 1500 650 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1500 650  1500 3750
-Wire Wire Line
-	1500 700  1050 700 
-Connection ~ 1500 700 
+	1500 650  1500 3000
 Entry Wire Line
 	1500 3750 1600 3850
-Connection ~ 6300 5550
 Entry Wire Line
 	5100 5450 5200 5550
 $Comp
@@ -467,34 +449,16 @@ Wire Wire Line
 Wire Wire Line
 	3750 700  3750 2250
 Wire Wire Line
-	2450 2250 1500 2250
-Connection ~ 1500 2250
-Wire Wire Line
 	3450 2350 3750 2350
 Wire Wire Line
 	3750 2350 3750 2750
 Wire Wire Line
 	3750 2750 1200 2750
-Connection ~ 1200 2750
 Wire Wire Line
 	2450 2350 2300 2350
 Wire Wire Line
 	2300 2350 2300 2750
 Connection ~ 2300 2750
-$Comp
-L CONN_5 P?
-U 1 1 56866CB4
-P 650 900
-F 0 "P?" V 600 900 50  0000 C CNN
-F 1 "CONN_5" V 700 900 50  0000 C CNN
-F 2 "" H 650 900 60  0000 C CNN
-F 3 "" H 650 900 60  0000 C CNN
-	1    650  900 
-	-1   0    0    -1  
-$EndComp
-NoConn ~ 1050 1000
-Wire Wire Line
-	1200 1100 1050 1100
 $Comp
 L +3.6V #PWR?
 U 1 1 56867349
@@ -507,11 +471,7 @@ F 3 "" H 10100 2950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1050 800  3750 800 
-Connection ~ 3750 800 
-Wire Wire Line
-	1650 800  1650 650 
-Connection ~ 1650 800 
+	1650 650  1650 1000
 $Comp
 L +3.6V #PWR?
 U 1 1 56867700
@@ -523,10 +483,6 @@ F 3 "" H 1800 650 60  0000 C CNN
 	1    1800 650 
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1050 900  1800 900 
-Wire Wire Line
-	1800 900  1800 650 
 Entry Wire Line
 	8300 1900 8400 2000
 Entry Wire Line
@@ -585,4 +541,49 @@ Wire Wire Line
 	9950 3000 10100 3000
 Wire Wire Line
 	10100 3000 10100 2950
+$Comp
+L JUMPER JP?
+U 1 1 58A04E2A
+P 1500 3300
+F 0 "JP?" H 1500 3450 60  0000 C CNN
+F 1 "JUMPER" H 1500 3220 40  0000 C CNN
+F 2 "" H 1500 3300 60  0001 C CNN
+F 3 "" H 1500 3300 60  0001 C CNN
+	1    1500 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1500 3750 1500 3600
+Text Label 6350 5550 0    60   ~ 0
+3,3V
+Wire Wire Line
+	2450 2250 1500 2250
+Connection ~ 1500 2250
+$Comp
+L CONN_4 P?
+U 1 1 58A0935B
+P 650 850
+F 0 "P?" V 600 850 50  0000 C CNN
+F 1 "CONN_4" V 700 850 50  0000 C CNN
+F 2 "" H 650 850 60  0000 C CNN
+F 3 "" H 650 850 60  0000 C CNN
+	1    650  850 
+	-1   0    0    -1  
+$EndComp
+Connection ~ 3750 700 
+Wire Wire Line
+	1800 650  1800 900 
+Wire Wire Line
+	1650 700  6650 700 
+Connection ~ 1200 2750
+Wire Wire Line
+	1200 700  1000 700 
+Wire Wire Line
+	1650 1000 1000 1000
+Connection ~ 1650 700 
+Wire Wire Line
+	1800 900  1000 900 
+Wire Wire Line
+	1000 800  1500 800 
+Connection ~ 1500 800 
 $EndSCHEMATC

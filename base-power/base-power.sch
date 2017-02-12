@@ -1,0 +1,192 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:varistor
+LIBS:MyKicadLib
+LIBS:base-power-cache
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "12 feb 2017"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_4 P?
+U 1 1 58A0962C
+P 900 1350
+F 0 "P?" V 850 1350 50  0000 C CNN
+F 1 "CONN_4" V 950 1350 50  0000 C CNN
+F 2 "" H 900 1350 60  0000 C CNN
+F 3 "" H 900 1350 60  0000 C CNN
+	1    900  1350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_2 P?
+U 1 1 58A09B4A
+P 900 2300
+F 0 "P?" V 850 2300 40  0000 C CNN
+F 1 "CONN_2" V 950 2300 40  0000 C CNN
+F 2 "" H 900 2300 60  0000 C CNN
+F 3 "" H 900 2300 60  0000 C CNN
+	1    900  2300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L +3,3V #PWR?
+U 1 1 58A09B59
+P 1550 1000
+F 0 "#PWR?" H 1550 960 30  0001 C CNN
+F 1 "+3,3V" H 1550 1110 30  0000 C CNN
+F 2 "" H 1550 1000 60  0000 C CNN
+F 3 "" H 1550 1000 60  0000 C CNN
+	1    1550 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.6V #PWR?
+U 1 1 58A09B68
+P 1800 1000
+F 0 "#PWR?" H 1800 960 30  0001 C CNN
+F 1 "+3.6V" H 1800 1110 30  0000 C CNN
+F 2 "~" H 1800 1000 60  0000 C CNN
+F 3 "~" H 1800 1000 60  0000 C CNN
+	1    1800 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L VTX-214-005-105 U?
+U 1 1 58A09B77
+P 2650 2250
+F 0 "U?" H 2650 2650 60  0000 C CNN
+F 1 "VTX-214-005-105" H 2650 2250 60  0000 C CNN
+F 2 "~" H 2650 2250 60  0000 C CNN
+F 3 "~" H 2650 2250 60  0000 C CNN
+	1    2650 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L VZ-14D391KBS V?
+U 1 1 58A09B86
+P 1550 2250
+F 0 "V?" V 1450 2250 60  0000 C CNN
+F 1 "VZ-14D391KBS" V 1650 2250 60  0000 C CNN
+F 2 "~" H 1550 2250 60  0000 C CNN
+F 3 "~" H 1550 2250 60  0000 C CNN
+	1    1550 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 58A09BB3
+P 2000 1000
+F 0 "#PWR?" H 2000 1090 20  0001 C CNN
+F 1 "+5V" H 2000 1090 30  0000 C CNN
+F 2 "" H 2000 1000 60  0000 C CNN
+F 3 "" H 2000 1000 60  0000 C CNN
+	1    2000 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 58A09BC2
+P 3750 2550
+F 0 "#PWR?" H 3750 2550 30  0001 C CNN
+F 1 "GND" H 3750 2480 30  0001 C CNN
+F 2 "" H 3750 2550 60  0000 C CNN
+F 3 "" H 3750 2550 60  0000 C CNN
+	1    3750 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 1200 1250 1200
+Wire Wire Line
+	3750 1200 3750 2550
+Wire Wire Line
+	3400 2350 4450 2350
+Connection ~ 3750 2350
+Wire Wire Line
+	1250 1300 1550 1300
+Wire Wire Line
+	1550 1300 1550 1000
+Wire Wire Line
+	1250 1400 5250 1400
+Wire Wire Line
+	1800 1400 1800 1000
+Wire Wire Line
+	1250 1500 3600 1500
+Wire Wire Line
+	2000 1500 2000 1000
+Wire Wire Line
+	3400 2150 3600 2150
+Wire Wire Line
+	3600 2150 3600 1500
+Connection ~ 2000 1500
+Wire Wire Line
+	1250 2400 1900 2400
+Connection ~ 1550 2400
+Wire Wire Line
+	1250 2200 1300 2200
+Wire Wire Line
+	1300 2200 1300 2050
+Wire Wire Line
+	1300 2050 1900 2050
+Wire Wire Line
+	1550 2100 1550 2050
+Connection ~ 1550 2050
+$Comp
+L LD1086 U?
+U 1 1 58A098D3
+P 4500 1450
+F 0 "U?" H 4750 750 60  0000 C CNN
+F 1 "LD1086" H 4450 1450 60  0000 C CNN
+F 2 "~" H 4500 1650 60  0000 C CNN
+F 3 "~" H 4500 1650 60  0000 C CNN
+	1    4500 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 1750 3600 1750
+Connection ~ 3600 1750
+Wire Wire Line
+	5100 1750 5250 1750
+Wire Wire Line
+	5250 1750 5250 1400
+Connection ~ 1800 1400
+$EndSCHEMATC
