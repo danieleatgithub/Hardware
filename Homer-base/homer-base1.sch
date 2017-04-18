@@ -38,7 +38,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "12 feb 2017"
+Date "18 apr 2017"
 Rev ""
 Comp ""
 Comment1 ""
@@ -106,7 +106,7 @@ Wire Wire Line
 Wire Wire Line
 	6900 2250 6500 2250
 Wire Wire Line
-	6950 1450 6950 1600
+	6950 850  6950 1600
 Connection ~ 6950 1450
 Wire Wire Line
 	6650 700  6650 950 
@@ -127,7 +127,7 @@ Wire Wire Line
 Wire Bus Line
 	10800 3850 750  3850
 Wire Bus Line
-	10800 1850 10800 3850
+	10800 1850 10800 7000
 Wire Bus Line
 	8100 3950 8100 7000
 Wire Wire Line
@@ -141,7 +141,7 @@ Wire Wire Line
 Wire Wire Line
 	2400 5300 3000 5300
 Wire Bus Line
-	8300 1800 8300 3750
+	8300 700  8300 3750
 Entry Wire Line
 	3000 5400 3100 5500
 Text Label 950  5300 0    60   ~ 0
@@ -230,7 +230,7 @@ L CONN_8X2 P?
 U 1 1 554756DF
 P 9500 2350
 F 0 "P?" H 9500 2800 60  0000 C CNN
-F 1 "CONN_8X2" V 9500 2350 50  0000 C CNN
+F 1 "FRONT PANEL" V 9500 2350 50  0000 C CNN
 F 2 "" H 9500 2350 60  0001 C CNN
 F 3 "" H 9500 2350 60  0001 C CNN
 	1    9500 2350
@@ -586,4 +586,56 @@ Wire Wire Line
 Wire Wire Line
 	1000 800  1500 800 
 Connection ~ 1500 800 
+$Comp
+L CONN_8X2 P?
+U 1 1 58D59E38
+P 9550 5550
+F 0 "P?" H 9550 6000 60  0000 C CNN
+F 1 "BASE POWER" V 9550 5550 50  0000 C CNN
+F 2 "" H 9550 5550 60  0000 C CNN
+F 3 "" H 9550 5550 60  0000 C CNN
+	1    9550 5550
+	1    0    0    -1  
+$EndComp
+Entry Wire Line
+	10700 5200 10800 5300
+Wire Wire Line
+	10700 5200 9950 5200
+Text Label 9950 5200 0    60   ~ 0
+PA30 TWD0
+Text Label 8650 5200 0    60   ~ 0
+PA31 TWCK0
+Entry Wire Line
+	10700 4900 10800 5000
+Wire Wire Line
+	8650 4900 10700 4900
+Wire Wire Line
+	8650 5200 9150 5200
+Wire Wire Line
+	8650 4900 8650 5200
+$Comp
+L BATTERY BT?
+U 1 1 58F66281
+P 7550 850
+F 0 "BT?" H 7550 1050 50  0000 C CNN
+F 1 "BATTERY" H 7550 660 50  0000 C CNN
+F 2 "~" H 7550 850 60  0000 C CNN
+F 3 "~" H 7550 850 60  0000 C CNN
+	1    7550 850 
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6950 850  7250 850 
+Entry Wire Line
+	8200 850  8300 950 
+Wire Wire Line
+	7850 850  8200 850 
+Entry Wire Line
+	8000 4550 8100 4650
+Wire Wire Line
+	8000 4550 7400 4550
+Text Label 7450 4550 0    60   ~ 0
+VBAT
+Text Label 7950 850  0    60   ~ 0
+VBAT
 $EndSCHEMATC
