@@ -38,7 +38,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "24 mar 2017"
+Date "18 apr 2017"
 Rev ""
 Comp ""
 Comment1 ""
@@ -161,7 +161,7 @@ L FUSE F?
 U 1 1 58D58C65
 P 1850 1550
 F 0 "F?" H 1950 1600 40  0000 C CNN
-F 1 "FUSE" H 1750 1500 40  0000 C CNN
+F 1 "500mA" H 1750 1500 40  0000 C CNN
 F 2 "~" H 1850 1550 60  0000 C CNN
 F 3 "~" H 1850 1550 60  0000 C CNN
 	1    1850 1550
@@ -209,7 +209,7 @@ L FUSE F?
 U 1 1 58D592F8
 P 5450 1150
 F 0 "F?" H 5550 1200 40  0000 C CNN
-F 1 "FUSE" H 5350 1100 40  0000 C CNN
+F 1 "1,25A" H 5350 1100 40  0000 C CNN
 F 2 "~" H 5450 1150 60  0000 C CNN
 F 3 "~" H 5450 1150 60  0000 C CNN
 	1    5450 1150
@@ -228,9 +228,7 @@ Wire Wire Line
 Wire Wire Line
 	5950 1450 5400 1450
 Wire Wire Line
-	5400 1450 5400 2050
-Wire Wire Line
-	5400 2050 5400 3000
+	5400 1450 5400 3000
 Wire Wire Line
 	5400 2050 5500 2050
 Wire Wire Line
@@ -238,23 +236,15 @@ Wire Wire Line
 Wire Wire Line
 	7450 1150 7450 2650
 Wire Wire Line
-	7450 2650 6150 2650
-Wire Wire Line
-	6150 2650 4800 2650
+	7450 2650 4800 2650
 Wire Wire Line
 	4800 2650 4800 2000
 Connection ~ 6150 2650
 Wire Wire Line
-	5400 3000 9750 3000
-Wire Wire Line
-	9750 3000 10050 3000
+	5400 3000 10050 3000
 Connection ~ 5400 2050
 Wire Wire Line
-	6950 2900 8550 2900
-Wire Wire Line
-	8550 2900 9600 2900
-Wire Wire Line
-	9600 2900 10050 2900
+	6950 2900 10050 2900
 Wire Wire Line
 	6950 2900 6950 2050
 Wire Wire Line
@@ -274,13 +264,9 @@ Wire Wire Line
 Wire Wire Line
 	9900 2700 9900 3100
 Wire Wire Line
-	9900 3100 7450 3100
+	9900 3100 6150 3100
 Wire Wire Line
-	7450 3100 6150 3100
-Wire Wire Line
-	6150 2650 6150 3100
-Wire Wire Line
-	6150 3100 6150 3250
+	6150 2650 6150 3250
 Wire Wire Line
 	2100 1550 2300 1550
 Wire Wire Line
@@ -300,17 +286,13 @@ Wire Wire Line
 Wire Wire Line
 	3300 2300 3300 2050
 Wire Wire Line
-	2700 2300 3050 2300
-Wire Wire Line
-	3050 2300 3300 2300
+	2700 2300 3300 2300
 Wire Wire Line
 	2700 2300 2700 2200
 Wire Wire Line
 	3300 1500 3300 1700
 Wire Wire Line
-	2700 1500 3050 1500
-Wire Wire Line
-	3050 1500 3300 1500
+	2700 1500 3300 1500
 Wire Wire Line
 	2700 1500 2700 1600
 Wire Wire Line
@@ -336,20 +318,24 @@ F 3 "" H 8100 3950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 6150 3100
-Text Label 8450 3600 0    60   ~ 0
+Text Label 7450 3600 0    60   ~ 0
 TWCK0
-Text Label 8450 3700 0    60   ~ 0
+Text Label 8550 3600 0    60   ~ 0
 TWD0
-Wire Wire Line
-	8500 3600 8750 3600
-Wire Wire Line
-	8750 3600 8750 1250
 Wire Wire Line
 	8750 1250 9600 1250
 Wire Wire Line
-	8500 3700 8800 3700
-Wire Wire Line
-	8800 3700 8800 1350
+	8800 3600 8800 1350
 Wire Wire Line
 	8800 1350 9600 1350
+Wire Wire Line
+	7700 3600 7400 3600
+Wire Wire Line
+	7400 3600 7400 3450
+Wire Wire Line
+	7400 3450 8750 3450
+Wire Wire Line
+	8750 3450 8750 1250
+Wire Wire Line
+	8500 3600 8800 3600
 $EndSCHEMATC

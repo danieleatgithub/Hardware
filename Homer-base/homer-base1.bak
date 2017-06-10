@@ -38,7 +38,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "18 apr 2017"
+Date "21 apr 2017"
 Rev ""
 Comp ""
 Comment1 ""
@@ -65,9 +65,9 @@ Wire Bus Line
 Wire Wire Line
 	1600 5100 850  5100
 Wire Wire Line
-	8700 3400 8700 4650
+	8700 4650 8700 3400
 Wire Wire Line
-	8700 4650 7400 4650
+	7400 4650 8700 4650
 Wire Wire Line
 	5500 6150 5500 5850
 Wire Wire Line
@@ -125,7 +125,7 @@ Wire Wire Line
 Wire Wire Line
 	1600 5200 850  5200
 Wire Bus Line
-	10800 3850 750  3850
+	750  3850 10800 3850
 Wire Bus Line
 	10800 1850 10800 7000
 Wire Bus Line
@@ -135,7 +135,7 @@ Wire Wire Line
 Wire Wire Line
 	6600 6550 5200 6550
 Wire Bus Line
-	3100 3950 3100 7050
+	3100 3950 3100 7200
 Wire Wire Line
 	3000 5200 2400 5200
 Wire Wire Line
@@ -178,10 +178,10 @@ Entry Bus Bus
 	8000 3850 8100 3950
 Entry Bus Bus
 	5000 3850 5100 3950
+Text Label 1000 5100 0    60   ~ 0
+PA3-BKLGHT
 Text Label 2400 5100 0    60   ~ 0
-PA2-BKLGHT
-Text Label 1200 5100 0    60   ~ 0
-PA3-RST
+PA2-RST
 Entry Wire Line
 	750  5000 850  5100
 Entry Wire Line
@@ -427,7 +427,7 @@ Wire Wire Line
 Wire Wire Line
 	2150 2050 2450 2050
 Wire Wire Line
-	3600 3400 8700 3400
+	8700 3400 3600 3400
 Wire Wire Line
 	4900 2050 3450 2050
 Wire Wire Line
@@ -603,16 +603,12 @@ Wire Wire Line
 	10700 5200 9950 5200
 Text Label 9950 5200 0    60   ~ 0
 PA30 TWD0
-Text Label 8650 5200 0    60   ~ 0
+Text Label 8550 5200 0    60   ~ 0
 PA31 TWCK0
 Entry Wire Line
-	10700 4900 10800 5000
+	8100 5100 8200 5200
 Wire Wire Line
-	8650 4900 10700 4900
-Wire Wire Line
-	8650 5200 9150 5200
-Wire Wire Line
-	8650 4900 8650 5200
+	8200 5200 9150 5200
 $Comp
 L BATTERY BT?
 U 1 1 58F66281
@@ -638,4 +634,75 @@ Text Label 7450 4550 0    60   ~ 0
 VBAT
 Text Label 7950 850  0    60   ~ 0
 VBAT
+Entry Wire Line
+	3000 6500 3100 6600
+Wire Wire Line
+	2400 6500 3000 6500
+Entry Wire Line
+	750  6500 850  6600
+Wire Wire Line
+	1600 6600 850  6600
+Text Label 2400 6500 0    60   ~ 0
+PD20-AD0
+Text Label 1100 6600 0    60   ~ 0
+PD21-AD1
+Text Label 2400 7000 0    60   ~ 0
+ADVREF
+Wire Wire Line
+	9150 5300 8200 5300
+Wire Wire Line
+	9950 5300 10700 5300
+Entry Wire Line
+	10700 5300 10800 5400
+Entry Wire Line
+	8100 5200 8200 5300
+Text Label 8650 5300 0    60   ~ 0
+PD20-AD0
+Text Label 9950 5300 0    60   ~ 0
+PD21-AD1
+$Comp
+L +3.3V #PWR?
+U 1 1 58F9A753
+P 2250 7400
+F 0 "#PWR?" H 2250 7360 30  0001 C CNN
+F 1 "+3.3V" H 2250 7510 30  0000 C CNN
+F 2 "" H 2250 7400 60  0000 C CNN
+F 3 "" H 2250 7400 60  0000 C CNN
+	1    2250 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.6V #PWR?
+U 1 1 58F9A75B
+P 2950 7400
+F 0 "#PWR?" H 2950 7360 30  0001 C CNN
+F 1 "+3.6V" H 2950 7510 30  0000 C CNN
+F 2 "" H 2950 7400 60  0000 C CNN
+F 3 "" H 2950 7400 60  0000 C CNN
+	1    2950 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L JUMPER3 JP?
+U 1 1 58F9A76A
+P 2600 7500
+F 0 "JP?" H 2650 7400 40  0000 L CNN
+F 1 "JUMPER3" H 2600 7600 40  0000 C CNN
+F 2 "~" H 2600 7500 60  0000 C CNN
+F 3 "~" H 2600 7500 60  0000 C CNN
+	1    2600 7500
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2400 7000 2600 7000
+Wire Wire Line
+	2600 7000 2600 7400
+Wire Wire Line
+	2850 7500 2950 7500
+Wire Wire Line
+	2950 7500 2950 7400
+Wire Wire Line
+	2350 7500 2250 7500
+Wire Wire Line
+	2250 7500 2250 7400
 $EndSCHEMATC

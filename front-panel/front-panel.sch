@@ -37,7 +37,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "1 jan 2016"
+Date "25 apr 2017"
 Rev ""
 Comp ""
 Comment1 ""
@@ -46,7 +46,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Wire Wire Line
-	3000 1600 1950 1600
+	3000 1600 1050 1600
 Wire Wire Line
 	2050 3500 7200 3500
 Wire Wire Line
@@ -76,34 +76,26 @@ Wire Wire Line
 Wire Wire Line
 	8950 1800 8950 1600
 Wire Wire Line
-	2900 1700 2900 2000
+	2900 2000 2900 1700
 Wire Wire Line
-	2900 2000 1950 2000
+	1050 2000 2900 2000
 Wire Wire Line
-	1950 1900 3900 1900
+	1050 1900 3900 1900
 Wire Wire Line
-	1950 1800 6850 1800
+	1050 1800 6850 1800
 Connection ~ 2700 1600
 Wire Wire Line
-	3000 900  3000 1600
+	3000 650  3000 1600
 Wire Wire Line
-	2200 1050 2700 1050
-Wire Wire Line
-	2200 1050 2200 1300
-Wire Wire Line
-	2200 1300 1950 1300
-Wire Wire Line
-	1950 1500 2450 1500
+	1050 1500 2450 1500
 Wire Wire Line
 	2700 1500 2700 2100
 Wire Wire Line
-	1950 1400 2300 1400
+	1050 1400 2300 1400
 Wire Wire Line
 	2300 1400 2300 1100
 Wire Wire Line
 	2300 1100 2450 1100
-Wire Wire Line
-	2700 1050 2700 1100
 Wire Wire Line
 	9700 1200 10900 1200
 Wire Wire Line
@@ -137,15 +129,15 @@ Wire Wire Line
 Wire Wire Line
 	2050 3500 2050 3600
 Wire Wire Line
-	2700 2100 1950 2100
+	2700 2100 1050 2100
 Wire Wire Line
 	2700 3500 2700 3350
 Wire Wire Line
-	1950 2200 2700 2200
+	1050 2200 2700 2200
 Wire Wire Line
 	2700 2200 2700 2950
 Wire Wire Line
-	2250 1700 1950 1700
+	2250 1700 1050 1700
 $Comp
 L CONN_8X2 P?
 U 1 1 5546FD08
@@ -207,7 +199,7 @@ F 3 "" H 10900 3300 60  0001 C CNN
 	1    10900 3300
 	1    0    0    -1  
 $EndComp
-Text Label 1950 2000 0    60   ~ 0
+Text Label 1050 2000 0    60   ~ 0
 RST
 $Comp
 L GND #PWR05
@@ -220,23 +212,12 @@ F 3 "" H 2050 3600 60  0001 C CNN
 	1    2050 3600
 	1    0    0    -1  
 $EndComp
-Text Label 1950 1900 0    60   ~ 0
+Text Label 1050 1900 0    60   ~ 0
 SCL
-Text Label 1950 1800 0    60   ~ 0
+Text Label 1050 1800 0    60   ~ 0
 SDA
-Text Label 1950 1700 0    60   ~ 0
+Text Label 1050 1700 0    60   ~ 0
 GND
-$Comp
-L +3.3VP #PWR07
-U 1 1 553365BE
-P 3000 900
-F 0 "#PWR07" H 3050 930 20  0001 C CNN
-F 1 "+3.3VP" H 3000 990 30  0000 C CNN
-F 2 "" H 3000 900 60  0001 C CNN
-F 3 "" H 3000 900 60  0001 C CNN
-	1    3000 900 
-	1    0    0    -1  
-$EndComp
 $Comp
 L C C4
 U 1 1 55336589
@@ -259,13 +240,11 @@ F 3 "" H 2450 1300 60  0001 C CNN
 	1    2450 1300
 	1    0    0    -1  
 $EndComp
-Text Label 1950 1400 0    60   ~ 0
+Text Label 1050 1400 0    60   ~ 0
 CAP1N
-Text Label 1950 1500 0    60   ~ 0
+Text Label 1050 1500 0    60   ~ 0
 CAP1P
-Text Label 1950 1300 0    60   ~ 0
-VOUT
-Text Label 1950 1600 0    60   ~ 0
+Text Label 1050 1600 0    60   ~ 0
 VDD
 $Comp
 L SW_PUSH SW5
@@ -325,28 +304,28 @@ $EndComp
 $Comp
 L CONN_10 P2
 U 1 1 55336217
-P 1600 1750
-F 0 "P2" V 1550 1750 60  0000 C CNN
-F 1 "LCD" V 1650 1750 60  0000 C CNN
-F 2 "" H 1600 1750 60  0001 C CNN
-F 3 "" H 1600 1750 60  0001 C CNN
-	1    1600 1750
+P 700 1750
+F 0 "P2" V 650 1750 60  0000 C CNN
+F 1 "LCD" V 750 1750 60  0000 C CNN
+F 2 "" H 700 1750 60  0001 C CNN
+F 3 "" H 700 1750 60  0001 C CNN
+	1    700  1750
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	5400 2650 6800 2650
 Wire Wire Line
-	6800 2650 6800 1050
+	6800 2650 6800 750 
 Wire Wire Line
-	3000 1050 7500 1050
-Connection ~ 3000 1050
+	1800 750  7500 750 
+Connection ~ 3000 750 
 Wire Wire Line
 	7300 3100 7300 3200
 Wire Wire Line
 	7300 3200 7500 3200
 Wire Wire Line
-	7500 3200 7500 1050
-Connection ~ 6800 1050
+	7500 3200 7500 750 
+Connection ~ 6800 750 
 Wire Wire Line
 	7200 3500 7200 3100
 Connection ~ 2700 3500
@@ -363,7 +342,7 @@ Wire Wire Line
 Wire Wire Line
 	3150 1950 3150 2550
 Text Label 4000 1950 0    60   ~ 0
-PA2-BKLGHT
+PA3-BKLGHT
 Wire Wire Line
 	5400 1950 6200 1950
 Wire Wire Line
@@ -371,7 +350,7 @@ Wire Wire Line
 Wire Wire Line
 	6200 1700 2900 1700
 Text Label 5450 1950 0    60   ~ 0
-PA3-RST
+PA2-RST
 Text Label 4000 2050 0    60   ~ 0
 PA31-TWCK0
 Wire Wire Line
@@ -416,4 +395,69 @@ Wire Wire Line
 	3750 2250 4600 2250
 Text Label 4000 2250 0    60   ~ 0
 PA6-BTNLEFT
+$Comp
+L R R?
+U 1 1 58FA50A2
+P 2100 1000
+F 0 "R?" V 2180 1000 50  0000 C CNN
+F 1 "4K7" V 2100 1000 50  0000 C CNN
+F 2 "" H 2100 1000 60  0001 C CNN
+F 3 "" H 2100 1000 60  0001 C CNN
+	1    2100 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 58FA50B2
+P 1950 1000
+F 0 "R?" V 2030 1000 50  0000 C CNN
+F 1 "4K7" V 1950 1000 50  0000 C CNN
+F 2 "" H 1950 1000 60  0001 C CNN
+F 3 "" H 1950 1000 60  0001 C CNN
+	1    1950 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 58FA50B8
+P 1800 1000
+F 0 "R?" V 1880 1000 50  0000 C CNN
+F 1 "4K7" V 1800 1000 50  0000 C CNN
+F 2 "" H 1800 1000 60  0001 C CNN
+F 3 "" H 1800 1000 60  0001 C CNN
+	1    1800 1000
+	1    0    0    -1  
+$EndComp
+Connection ~ 1950 750 
+Connection ~ 2100 750 
+$Comp
+L +3.6V #PWR?
+U 1 1 58FF153A
+P 3000 650
+F 0 "#PWR?" H 3000 610 30  0001 C CNN
+F 1 "+3.6V" H 3000 760 30  0000 C CNN
+F 2 "~" H 3000 650 60  0000 C CNN
+F 3 "~" H 3000 650 60  0000 C CNN
+	1    3000 650 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 1250 1800 2000
+Connection ~ 1800 2000
+Wire Wire Line
+	1950 1250 1950 1900
+Connection ~ 1950 1900
+Text Label 1050 1300 0    60   ~ 0
+VOUT
+Wire Wire Line
+	2700 1050 2700 1100
+Wire Wire Line
+	2200 1050 2700 1050
+Wire Wire Line
+	2200 1300 2200 1050
+Wire Wire Line
+	1050 1300 2200 1300
+Wire Wire Line
+	2100 1250 2100 1800
+Connection ~ 2100 1800
 $EndSCHEMATC
