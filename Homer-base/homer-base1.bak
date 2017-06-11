@@ -500,7 +500,7 @@ Wire Wire Line
 Wire Wire Line
 	8400 2300 9100 2300
 Text Label 8500 2000 0    60   ~ 0
-PA2-BKLGHT
+PA3-BKLGHT
 Entry Wire Line
 	10700 2000 10800 2100
 Entry Wire Line
@@ -510,7 +510,7 @@ Entry Wire Line
 Wire Wire Line
 	9900 2000 10700 2000
 Text Label 9950 2000 0    60   ~ 0
-PA3-RST
+PA2-RST
 Text Label 8500 2100 0    60   ~ 0
 PA31 TWCK0
 Wire Wire Line

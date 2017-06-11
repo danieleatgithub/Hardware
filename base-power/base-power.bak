@@ -38,7 +38,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "18 apr 2017"
+Date "21 apr 2017"
 Rev ""
 Comp ""
 Comment1 ""
@@ -338,4 +338,38 @@ Wire Wire Line
 	8750 3450 8750 1250
 Wire Wire Line
 	8500 3600 8800 3600
+$Comp
+L TST P?
+U 1 1 58FA5824
+P 7100 3500
+F 0 "P?" H 7100 3800 40  0000 C CNN
+F 1 "AD0" H 7100 3750 30  0000 C CNN
+F 2 "~" H 7100 3500 60  0000 C CNN
+F 3 "~" H 7100 3500 60  0000 C CNN
+	1    7100 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 3700 7100 3500
+Text Label 7250 3700 0    60   ~ 0
+PD20-AD0
+$Comp
+L TST P?
+U 1 1 58FA589A
+P 9150 3500
+F 0 "P?" H 9150 3800 40  0000 C CNN
+F 1 "AD1" H 9150 3750 30  0000 C CNN
+F 2 "~" H 9150 3500 60  0000 C CNN
+F 3 "~" H 9150 3500 60  0000 C CNN
+	1    9150 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 3700 9150 3700
+Wire Wire Line
+	9150 3700 9150 3500
+Text Label 8550 3700 0    60   ~ 0
+PD21-AD1
+Wire Wire Line
+	7700 3700 7100 3700
 $EndSCHEMATC

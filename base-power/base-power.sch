@@ -38,7 +38,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "21 apr 2017"
+Date "10 jun 2017"
 Rev ""
 Comp ""
 Comment1 ""
@@ -77,17 +77,6 @@ F 1 "+3,3V" H 9450 2710 30  0000 C CNN
 F 2 "" H 9450 2600 60  0000 C CNN
 F 3 "" H 9450 2600 60  0000 C CNN
 	1    9450 2600
-	1    0    0    -1  
-$EndComp
-$Comp
-L +3.6V #PWR?
-U 1 1 58A09B68
-P 9600 2600
-F 0 "#PWR?" H 9600 2560 30  0001 C CNN
-F 1 "+3.6V" H 9600 2710 30  0000 C CNN
-F 2 "~" H 9600 2600 60  0000 C CNN
-F 3 "~" H 9600 2600 60  0000 C CNN
-	1    9600 2600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -132,17 +121,6 @@ F 1 "GND" H 6150 3180 30  0001 C CNN
 F 2 "" H 6150 3250 60  0000 C CNN
 F 3 "" H 6150 3250 60  0000 C CNN
 	1    6150 3250
-	1    0    0    -1  
-$EndComp
-$Comp
-L LD1086 U?
-U 1 1 58A098D3
-P 6200 1750
-F 0 "U?" H 6450 1050 60  0000 C CNN
-F 1 "LD1086" H 6150 1750 60  0000 C CNN
-F 2 "~" H 6200 1950 60  0000 C CNN
-F 3 "~" H 6200 1950 60  0000 C CNN
-	1    6200 1750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -230,8 +208,6 @@ Wire Wire Line
 Wire Wire Line
 	5400 1450 5400 3000
 Wire Wire Line
-	5400 2050 5500 2050
-Wire Wire Line
 	9600 1150 7450 1150
 Wire Wire Line
 	7450 1150 7450 2650
@@ -242,20 +218,10 @@ Wire Wire Line
 Connection ~ 6150 2650
 Wire Wire Line
 	5400 3000 10050 3000
-Connection ~ 5400 2050
 Wire Wire Line
-	6950 2900 10050 2900
-Wire Wire Line
-	6950 2900 6950 2050
-Wire Wire Line
-	6950 2050 6800 2050
-Wire Wire Line
-	10050 2800 9450 2800
+	8700 2800 10050 2800
 Wire Wire Line
 	9450 2800 9450 2600
-Wire Wire Line
-	9600 2600 9600 2900
-Connection ~ 9600 2900
 Wire Wire Line
 	9750 2600 9750 3000
 Connection ~ 9750 3000
@@ -301,11 +267,6 @@ Connection ~ 3050 1500
 Wire Wire Line
 	3050 2050 3050 2300
 Connection ~ 3050 2300
-Wire Wire Line
-	9600 1050 8550 1050
-Wire Wire Line
-	8550 1050 8550 2900
-Connection ~ 8550 2900
 $Comp
 L CONN_8X2 P?
 U 1 1 58D59AC3
@@ -372,4 +333,9 @@ Text Label 8550 3700 0    60   ~ 0
 PD21-AD1
 Wire Wire Line
 	7700 3700 7100 3700
+Wire Wire Line
+	8700 2800 8700 1050
+Wire Wire Line
+	8700 1050 9600 1050
+Connection ~ 9450 2800
 $EndSCHEMATC

@@ -72,7 +72,7 @@
       (hpglpendiameter 15)
       (hpglpenoverlay 2)
       (psnegative false)
-      (psa4output false)
+      (psa4output true)
       (plotreference true)
       (plotvalue true)
       (plotothertext true)
