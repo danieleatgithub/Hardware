@@ -38,7 +38,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "10 jun 2017"
+Date "16 jun 2017"
 Rev ""
 Comp ""
 Comment1 ""
@@ -59,29 +59,15 @@ Wire Wire Line
 Wire Wire Line
 	10700 2300 9900 2300
 Wire Bus Line
-	5100 3950 5100 5450
+	5100 3950 5100 7100
 Wire Bus Line
-	5100 5450 5100 6450
-Wire Bus Line
-	5100 6450 5100 7100
-Wire Bus Line
-	750  3850 750  5000
-Wire Bus Line
-	750  5000 750  5100
-Wire Bus Line
-	750  5100 750  5200
-Wire Bus Line
-	750  5200 750  6500
-Wire Bus Line
-	750  6500 750  7050
+	750  3850 750  7050
 Wire Wire Line
 	1600 5100 850  5100
 Wire Wire Line
 	8700 4650 8700 3400
 Wire Wire Line
-	7400 4650 8100 4650
-Wire Wire Line
-	8100 4650 8700 4650
+	7400 4650 8700 4650
 Wire Wire Line
 	5500 6150 5500 5850
 Wire Wire Line
@@ -90,11 +76,7 @@ Connection ~ 6650 1450
 Wire Wire Line
 	7200 1450 7200 1600
 Wire Wire Line
-	6500 1450 6650 1450
-Wire Wire Line
-	6650 1450 6950 1450
-Wire Wire Line
-	6950 1450 7200 1450
+	6500 1450 7200 1450
 Wire Wire Line
 	6500 2050 6950 2050
 Wire Wire Line
@@ -124,9 +106,7 @@ Wire Wire Line
 Wire Wire Line
 	6900 2250 6500 2250
 Wire Wire Line
-	6950 850  6950 1450
-Wire Wire Line
-	6950 1450 6950 1600
+	6950 850  6950 1600
 Connection ~ 6950 1450
 Wire Wire Line
 	6650 700  6650 950 
@@ -145,75 +125,23 @@ Wire Wire Line
 Wire Wire Line
 	1600 5200 850  5200
 Wire Bus Line
-	750  3850 1600 3850
+	750  3850 10800 3850
 Wire Bus Line
-	1600 3850 3000 3850
+	10800 1850 10800 7000
 Wire Bus Line
-	3000 3850 5000 3850
-Wire Bus Line
-	5000 3850 8000 3850
-Wire Bus Line
-	8000 3850 8400 3850
-Wire Bus Line
-	8400 3850 10800 3850
-Wire Bus Line
-	10800 1850 10800 2100
-Wire Bus Line
-	10800 2100 10800 2200
-Wire Bus Line
-	10800 2200 10800 2300
-Wire Bus Line
-	10800 2300 10800 2400
-Wire Bus Line
-	10800 2400 10800 5300
-Wire Bus Line
-	10800 5300 10800 5400
-Wire Bus Line
-	10800 5400 10800 7000
-Wire Bus Line
-	8100 3950 8100 4650
-Wire Bus Line
-	8100 4650 8100 5100
-Wire Bus Line
-	8100 5100 8100 5200
-Wire Bus Line
-	8100 5200 8100 6650
-Wire Bus Line
-	8100 6650 8100 7000
+	8100 3950 8100 7000
 Wire Wire Line
 	8000 6550 7400 6550
 Wire Wire Line
 	6600 6550 5200 6550
 Wire Bus Line
-	3100 3950 3100 5200
-Wire Bus Line
-	3100 5200 3100 5300
-Wire Bus Line
-	3100 5300 3100 5400
-Wire Bus Line
-	3100 5400 3100 5500
-Wire Bus Line
-	3100 5500 3100 6600
-Wire Bus Line
-	3100 6600 3100 7200
+	3100 3950 3100 7200
 Wire Wire Line
 	3000 5200 2400 5200
 Wire Wire Line
 	2400 5300 3000 5300
 Wire Bus Line
-	8300 700  8300 950 
-Wire Bus Line
-	8300 950  8300 1900
-Wire Bus Line
-	8300 1900 8300 2000
-Wire Bus Line
-	8300 2000 8300 2100
-Wire Bus Line
-	8300 2100 8300 2200
-Wire Bus Line
-	8300 2200 8300 2300
-Wire Bus Line
-	8300 2300 8300 3750
+	8300 700  8300 3750
 Entry Wire Line
 	3000 5400 3100 5500
 Text Label 950  5300 0    60   ~ 0
@@ -465,9 +393,7 @@ F 3 "" H 5700 1650 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1200 700  1200 2750
-Wire Wire Line
-	1200 2750 1200 2950
+	1200 700  1200 2950
 $Comp
 L +3.3V #PWR?
 U 1 1 566BCF7A
@@ -480,11 +406,7 @@ F 3 "" H 1500 650 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1500 650  1500 800 
-Wire Wire Line
-	1500 800  1500 2250
-Wire Wire Line
-	1500 2250 1500 3000
+	1500 650  1500 3000
 Entry Wire Line
 	1500 3750 1600 3850
 Entry Wire Line
@@ -531,18 +453,14 @@ Wire Wire Line
 Wire Wire Line
 	3750 2350 3750 2750
 Wire Wire Line
-	3750 2750 2300 2750
-Wire Wire Line
-	2300 2750 1200 2750
+	3750 2750 1200 2750
 Wire Wire Line
 	2450 2350 2300 2350
 Wire Wire Line
 	2300 2350 2300 2750
 Connection ~ 2300 2750
 Wire Wire Line
-	1650 650  1650 700 
-Wire Wire Line
-	1650 700  1650 1000
+	1650 650  1650 1000
 Entry Wire Line
 	8300 1900 8400 2000
 Entry Wire Line
@@ -632,9 +550,7 @@ F 3 "" H 650 850 60  0000 C CNN
 $EndComp
 Connection ~ 3750 700 
 Wire Wire Line
-	1650 700  3750 700 
-Wire Wire Line
-	3750 700  6650 700 
+	1650 700  6650 700 
 Connection ~ 1200 2750
 Wire Wire Line
 	1200 700  1000 700 
@@ -730,17 +646,6 @@ F 3 "" H 2250 7400 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.6V #PWR?
-U 1 1 58F9A75B
-P 2950 7400
-F 0 "#PWR?" H 2950 7360 30  0001 C CNN
-F 1 "+3.6V" H 2950 7510 30  0000 C CNN
-F 2 "" H 2950 7400 60  0000 C CNN
-F 3 "" H 2950 7400 60  0000 C CNN
-	1    2950 7400
-	1    0    0    -1  
-$EndComp
-$Comp
 L JUMPER3 JP?
 U 1 1 58F9A76A
 P 2600 7500
@@ -756,13 +661,9 @@ Wire Wire Line
 Wire Wire Line
 	2600 7000 2600 7400
 Wire Wire Line
-	2850 7500 2950 7500
-Wire Wire Line
-	2950 7500 2950 7400
-Wire Wire Line
 	2350 7500 2250 7500
 Wire Wire Line
-	2250 7500 2250 7400
+	2250 7400 2250 7650
 $Comp
 L +3,3V #PWR?
 U 1 1 593C29D9
@@ -774,4 +675,59 @@ F 3 "" H 10100 2950 60  0000 C CNN
 	1    10100 2950
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	1600 4400 1600 4900
+Connection ~ 1600 4600
+Connection ~ 1600 4700
+Connection ~ 1600 4800
+Wire Wire Line
+	1600 4400 2400 4400
+Wire Wire Line
+	2400 4400 2400 4900
+Connection ~ 2400 4600
+Connection ~ 2400 4700
+Connection ~ 2400 4800
+Wire Wire Line
+	1600 5000 850  5000
+Entry Wire Line
+	750  4900 850  5000
+Text Label 1000 5000 0    60   ~ 0
+PA1-1WIRE
+$Comp
+L +3,3V #PWR?
+U 1 1 5943FF3F
+P 8950 750
+F 0 "#PWR?" H 8950 710 30  0001 C CNN
+F 1 "+3,3V" H 8950 860 30  0000 C CNN
+F 2 "" H 8950 750 60  0000 C CNN
+F 3 "" H 8950 750 60  0000 C CNN
+	1    8950 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5943FF4E
+P 8950 1000
+F 0 "R?" V 9030 1000 40  0000 C CNN
+F 1 "R" V 8957 1001 40  0000 C CNN
+F 2 "~" V 8880 1000 30  0000 C CNN
+F 3 "~" H 8950 1000 30  0000 C CNN
+	1    8950 1000
+	1    0    0    -1  
+$EndComp
+Entry Wire Line
+	8300 1350 8400 1450
+Wire Wire Line
+	8400 1450 8950 1450
+Wire Wire Line
+	8950 1450 8950 1250
+Text Label 8400 1450 0    60   ~ 0
+PA1-1WIRE
+Wire Wire Line
+	2850 7500 2950 7500
+Wire Wire Line
+	2950 7500 2950 7650
+Wire Wire Line
+	2950 7650 2250 7650
+Connection ~ 2250 7500
 $EndSCHEMATC
