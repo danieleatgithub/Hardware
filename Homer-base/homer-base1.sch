@@ -38,7 +38,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "16 jun 2017"
+Date "26 aug 2017"
 Rev ""
 Comp ""
 Comment1 ""
@@ -693,36 +693,6 @@ Entry Wire Line
 	750  4900 850  5000
 Text Label 1000 5000 0    60   ~ 0
 PA1-1WIRE
-$Comp
-L +3,3V #PWR?
-U 1 1 5943FF3F
-P 8950 750
-F 0 "#PWR?" H 8950 710 30  0001 C CNN
-F 1 "+3,3V" H 8950 860 30  0000 C CNN
-F 2 "" H 8950 750 60  0000 C CNN
-F 3 "" H 8950 750 60  0000 C CNN
-	1    8950 750 
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R?
-U 1 1 5943FF4E
-P 8950 1000
-F 0 "R?" V 9030 1000 40  0000 C CNN
-F 1 "R" V 8957 1001 40  0000 C CNN
-F 2 "~" V 8880 1000 30  0000 C CNN
-F 3 "~" H 8950 1000 30  0000 C CNN
-	1    8950 1000
-	1    0    0    -1  
-$EndComp
-Entry Wire Line
-	8300 1350 8400 1450
-Wire Wire Line
-	8400 1450 8950 1450
-Wire Wire Line
-	8950 1450 8950 1250
-Text Label 8400 1450 0    60   ~ 0
-PA1-1WIRE
 Wire Wire Line
 	2850 7500 2950 7500
 Wire Wire Line
@@ -730,4 +700,16 @@ Wire Wire Line
 Wire Wire Line
 	2950 7650 2250 7650
 Connection ~ 2250 7500
+Entry Wire Line
+	8100 5300 8200 5400
+Entry Wire Line
+	10700 5400 10800 5500
+Wire Wire Line
+	9150 5400 8200 5400
+Wire Wire Line
+	9950 5400 10700 5400
+Text Label 8300 5400 0    60   ~ 0
+PA11-HS11LFEN
+Text Label 9950 5400 0    60   ~ 0
+PA10-HS11LFD
 $EndSCHEMATC
